@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>O'neal Bitibaly - Etudiant Développeur web freelance - Création site internet</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <nav>
+    <h1> O'neal Bitibaly </h1>
+    <h2>Création de site internet</h2>
+    <div class="onglets">
+        <a href="#reception">Accueil</a>
+        <a href="#about"> A propos</a>
+        <a href="#projects"> Projets</a>
+        <a href="#competences"> Compétences</a>
+        <a href="#contact">Contact</a>
+    </div>
+ </nav> 
+ 
+ <header id="reception">
+    <h1>Web freelance</h1>
+    <h4>PME, associations ou particuliers,<br>
+je réponds à vos besoins en développement web  
+</h4>
+   <a href="#contact"> <button>Parcourir</button> </a>
+ </header>
+
+ <section class="main">
+
+<div class="content">
+
+<div class="card">
+    <div class="left" id="about">
+        <h1>A propos</h1>
+        <p>Je m'appelle O'neal Bitibaly,passionné par la création de site web moderne et inter-actif. <br> <br>Je suis actuellement étudiant en développement web,et je cherche à améliorer mes compétences en Java script,HTML et CSS. <br> <br> J'adore transformer mes idées en projet concret et expérimenter avec les nouvelles technologiques .</p>
+    <br><button onclick="downloadFile()">Télécharger mon CV</button>
+        <script>
+function downloadFile() {
+  const link = document.createElement('a');
+  link.href ="C:\Users\user\OneDrive\Bureau\cv.pdf";  
+  link.download = 'cv.pdf';
+  link.click();
+}
+</script>
+    </div>
+
+    <div class="right">
+        <img src="C:\Users\user\Downloads\man-9031564_1280.jpg"alt="">
+    </div>
+</div>
+<div class="card" id="projects">
+    <div class="left">
+        <h1>Mes projets</h1>
+        <br><br>
+        <button>Voir</button>
+    </div>
+    <div class="right">
+        <img src="C:\Users\user\Downloads\istockphoto-614877818-1024x1024.jpg"alt="">
+    </div>
+</div>
+
+<div class="card" id="competences">
+    <div class="left">
+        <h1>Mes compétences</h1>
+        <div class="skill">
+    <span class="text"><abbr title="(eXtensible) HyperText Markup Language">(X)HTML</abbr></span>
+    <div class="progress">
+      <div class="progress-bar" style="width: 85%;"></div>
+    </div>
+  </div>
+
+  <div class="skill">
+    <span>CSS</span>
+    <div class="progress">
+      <div class="progress-bar" style="width: 80%;"></div>
+    </div>
+  </div>
+
+  <div class="skill">
+    <span>JAVASCRIPT </span>
+    <div class="progress">
+      <div class="progress-bar" style="width: 70%;"></div>
+    </div>
+  </div>
+    </div>
+
+    <div class="right">
+        <img src="C:\Users\user\Downloads\code-1076536_640.jpg"alt="">
+    </div>
+
+</div>
+
+ </section>
+
+ <footer>
+
+    <h1>Contactez-moi</h1>
+
+    <form id="contactForm">
+    <div class="form-group">
+      <input type="text" id="name" placeholder="Nom / Prénom *" required>
+    </div>
+
+    <div class="form-group">
+      <input type="email" id="email" placeholder="E-mail *" required>
+    </div>
+
+    <div class="form-group">
+      <input type="tel" id="phone" placeholder="Téléphone">
+    </div>
+
+    <div class="form-group">
+      <textarea id="message" placeholder="Merci de détailler le plus possible votre besoin afin de faciliter nos futurs échanges. *" required></textarea>
+    </div>
+
+    <div class="col-xs-11 col-sm-11 col-md-11 col-lg-11 noPM">
+      <label>
+        <input type="checkbox" id="consent" required>
+        En soumettant ce formulaire, j'accepte que les informations saisies soient exploitées dans le cadre de la demande de contact et de la relation commerciale qui peut en découler.
+      </label>
+    </div>
+
+    <div class="form-group">
+      <input type="text" id="captcha" placeholder="5 + 4 = ? *" required autocomplete="off">
+    </div>
+
+    <button type="submit" class="btn">ENVOYER</button>
+  </form>
+
+  <script src="script.js"></script>
+
+    <p id="contact">Contact: 08 19 17 278 1 &copy; 2025,web freelance.</p>
+ </footer>
+</body>
+</html>
